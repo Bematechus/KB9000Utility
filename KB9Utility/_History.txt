@@ -1,0 +1,11 @@
+20140128
+	1. If entities were multiple selected, allow they to show the properties too.
+	2. Create this file.
+	3. Add Print, print preview menu item.
+	4. Move "Old priviw" to Export, and change name to "Image Viewer".
+	5. remove "legend sheet" border color.
+	6. fix bugs
+		For the testing: Delete and Shift do not work. And Right Ctrl with an extra
+[#Ctrl].
+    
+   

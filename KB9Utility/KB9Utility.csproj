@@ -1,0 +1,579 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4802A6C8-DC3C-48CD-A4DC-F157F62811CC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KB9Utility</RootNamespace>
+    <AssemblyName>KB9Utility</AssemblyName>
+    <ApplicationIcon>lci.ico</ApplicationIcon>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CKbdKey.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CKeyMatrixItem.cs" />
+    <Compile Include="CMyProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CMyProgressBar.Designer.cs">
+      <DependentUpon>CMyProgressBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ColorConverterUI.cs" />
+    <Compile Include="ColorEditorUI.cs" />
+    <Compile Include="COnScreenKbdKey.cs" />
+    <Compile Include="CoolPrintPreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CoolPrintPreviewDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CoolPrintPreviewDialog.designer.cs">
+      <DependentUpon>CoolPrintPreviewDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiagramKey.cs" />
+    <Compile Include="DiagramKeyMatrix.cs" />
+    <Compile Include="DiagramKeySlideH.cs" />
+    <Compile Include="DiagramKeySlideV.cs" />
+    <Compile Include="EnhancedToolTip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmConfirmWrite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfirmWrite.Designer.cs">
+      <DependentUpon>frmConfirmWrite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDataWrite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDataWrite.Designer.cs">
+      <DependentUpon>frmDataWrite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEntities64.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEntities64.Designer.cs">
+      <DependentUpon>frmEntities64.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKeyCodeError.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKeyCodeError.Designer.cs">
+      <DependentUpon>frmKeyCodeError.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKeyCodeLessDown.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKeyCodeLessDown.Designer.cs">
+      <DependentUpon>frmKeyCodeLessDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKeysMatrix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKeysMatrix.Designer.cs">
+      <DependentUpon>frmKeysMatrix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMsgBoxContinue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMsgBoxContinue.Designer.cs">
+      <DependentUpon>frmMsgBoxContinue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HookHelper.cs" />
+    <Compile Include="KB9Logger.cs" />
+    <Compile Include="frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbout.Designer.cs">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CLCIXML.cs" />
+    <Compile Include="DEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DiagramKeyArea.cs" />
+    <Compile Include="DiagramClipboardHandler.cs" />
+    <Compile Include="DiagramEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DiagramEditor.designer.cs">
+      <DependentUpon>DiagramEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiagramEntity.cs" />
+    <Compile Include="DiagramEntityContainer.cs" />
+    <Compile Include="DiagramPropertyDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAscii.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAscii.Designer.cs">
+      <DependentUpon>frmAscii.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCombination.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCombination.Designer.cs">
+      <DependentUpon>frmCombination.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDelay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDelay.Designer.cs">
+      <DependentUpon>frmDelay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInputStructure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInputStructure.Designer.cs">
+      <DependentUpon>frmInputStructure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKeyCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKeyCode.Designer.cs">
+      <DependentUpon>frmKeyCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLayers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLayers.Designer.cs">
+      <DependentUpon>frmLayers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMacro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMacro.Designer.cs">
+      <DependentUpon>frmMacro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMsgbox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMsgbox.Designer.cs">
+      <DependentUpon>frmMsgbox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPortType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPortType.Designer.cs">
+      <DependentUpon>frmPortType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPreview.Designer.cs">
+      <DependentUpon>frmPreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProgress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProgress.Designer.cs">
+      <DependentUpon>frmProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRepeat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRepeat.Designer.cs">
+      <DependentUpon>frmRepeat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSlideKeyContent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSlideKeyContent.Designer.cs">
+      <DependentUpon>frmSlideKeyContent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOnScreenKbd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOnScreenKbd.Designer.cs">
+      <DependentUpon>frmOnScreenKbd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTestKB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTestKB.Designer.cs">
+      <DependentUpon>frmTestKB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FunctionKeyState.cs" />
+    <Compile Include="GlobalizedPropertyAttribute.cs" />
+    <Compile Include="GlobalizedTypeAttribute.cs" />
+    <Compile Include="GroupFactory.cs" />
+    <Compile Include="ImagePreviewPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ImagePreviewPanel.Designer.cs">
+      <DependentUpon>ImagePreviewPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KB9API.cs" />
+    <Compile Include="KB9Const.cs" />
+    <Compile Include="KB9InputTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KB9InputTextBox.Designer.cs">
+      <DependentUpon>KB9InputTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KB9KeyDefinition.cs" />
+    <Compile Include="KB9Panel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="KB9TextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KB9TextBox.Designer.cs">
+      <DependentUpon>KB9TextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KB9Theme.cs" />
+    <Compile Include="KB9Validation.cs" />
+    <Compile Include="KbdState.cs" />
+    <Compile Include="KeyCodeEditor.cs" />
+    <Compile Include="KeyCodeMacroEditor.cs" />
+    <Compile Include="KeyEditingType.cs" />
+    <Compile Include="LegendPrinter.cs" />
+    <Compile Include="MruStripMenu.cs" />
+    <Compile Include="NSButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NumConverter.cs" />
+    <Compile Include="officepanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PageImageList.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="PropertiesDeluxeTypeConverter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CoolPrintPreviewDialog.resx">
+      <DependentUpon>CoolPrintPreviewDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAbout.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiagramEditor.resx">
+      <DependentUpon>DiagramEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAscii.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAscii.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCombination.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCombination.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfirmWrite.resx">
+      <DependentUpon>frmConfirmWrite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDataWrite.resx">
+      <DependentUpon>frmDataWrite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDelay.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDelay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEntities64.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmEntities64.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInputStructure.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmInputStructure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKeyCode.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmKeyCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKeyCodeError.resx">
+      <DependentUpon>frmKeyCodeError.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKeyCodeLessDown.resx">
+      <DependentUpon>frmKeyCodeLessDown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKeysMatrix.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmKeysMatrix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLayers.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmLayers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMacro.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMacro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMsgbox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMsgbox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMsgBoxContinue.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMsgBoxContinue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPortType.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPortType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPreview.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProgress.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRepeat.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmRepeat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSlideKeyContent.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSlideKeyContent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOnScreenKbd.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmOnScreenKbd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTestKB.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmTestKB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KB9TextBox.resx">
+      <DependentUpon>KB9TextBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NSButton.resx">
+      <DependentUpon>NSButton.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PropertyAttributes.cs" />
+    <Compile Include="PropertyAttributesProviderAttribute.cs" />
+    <Compile Include="PropertyDescriptorEx.cs" />
+    <Compile Include="PropertyOrderAttribute.cs" />
+    <Compile Include="RectangleFConverter.cs" />
+    <Compile Include="Tokenizer.cs" />
+    <Compile Include="TransparentSheet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UndoItem.cs" />
+    <Compile Include="Util.cs" />
+    <Compile Include="Win32Wrapper.cs" />
+    <Compile Include="WinAPI.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saveas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\singlelayer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\multiplelayer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\specialkey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\number.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\combination.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="lci.ico" />
+    <None Include="Resources\redo.png" />
+    <None Include="Resources\KB9000 small.png" />
+    <None Include="Resources\Bematech_KB9000.png" />
+    <None Include="Resources\block.png" />
+    <None Include="Resources\triangle.png" />
+    <Content Include="_History.txt" />
+    <None Include="Resources\bs.png" />
+    <None Include="Resources\shift.png" />
+    <None Include="Resources\slideh32.png" />
+    <None Include="Resources\slidev32.png" />
+    <None Include="Resources\read32.png" />
+    <None Include="Resources\detect32.png" />
+    <None Include="Resources\write32.png" />
+    <None Include="Resources\testkb32.png" />
+    <None Include="Resources\paste32.png" />
+    <None Include="Resources\mediavolsub.png" />
+    <None Include="Resources\mediavoladd.png" />
+    <None Include="Resources\mediastop.png" />
+    <None Include="Resources\mediaprev.png" />
+    <None Include="Resources\mediaplay.png" />
+    <None Include="Resources\mediapause.png" />
+    <None Include="Resources\medianext.png" />
+    <None Include="Resources\mediamute.png" />
+    <None Include="Resources\webstop.png" />
+    <None Include="Resources\websearch.png" />
+    <None Include="Resources\webrefresh.png" />
+    <None Include="Resources\webhome.png" />
+    <None Include="Resources\webforward.png" />
+    <None Include="Resources\webfavorite.png" />
+    <None Include="Resources\webback.png" />
+    <None Include="Resources\toolsmail.png" />
+    <None Include="Resources\toolscomputer.png" />
+    <None Include="Resources\toolscalc.png" />
+    <None Include="Resources\write.png" />
+    <None Include="Resources\testkb.png" />
+    <None Include="Resources\read.png" />
+    <None Include="Resources\detect.png" />
+    <None Include="Resources\plus.png" />
+    <None Include="Resources\substract.png" />
+    <None Include="Resources\selectall.png" />
+    <None Include="Resources\samewidth.png" />
+    <None Include="Resources\sameheight.png" />
+    <None Include="Resources\sameboth.png" />
+    <None Include="Resources\layer.png" />
+    <None Include="Resources\unselect.png" />
+    <None Include="Resources\logolr.PNG" />
+    <None Include="Resources\logoud.PNG" />
+    <None Include="Resources\macro.png" />
+    <None Include="Resources\repeat.png" />
+    <None Include="Resources\updown.png" />
+    <None Include="Resources\leftright.png" />
+    <None Include="Resources\bema.PNG" />
+    <None Include="app.config" />
+    <None Include="Resources\del.png" />
+    <None Include="Resources\button32.png" />
+    <None Include="Resources\button16.png" />
+    <None Include="Resources\alignright.png" />
+    <None Include="Resources\alignmiddle.png" />
+    <None Include="Resources\alignleft.png" />
+    <None Include="Resources\aligncenter.png" />
+    <None Include="Resources\alignbottom.png" />
+    <None Include="Resources\aligntop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

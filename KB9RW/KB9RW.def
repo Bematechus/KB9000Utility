@@ -1,0 +1,6 @@
+; KB9RW.def : Declares the module parameters for the DLL.
+
+LIBRARY      "KB9RW"
+
+EXPORTS
+    ; Explicit exports can go here
