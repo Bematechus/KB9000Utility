@@ -123,9 +123,9 @@ namespace KB9Utility.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Bematech_KB9000 {
+        internal static System.Drawing.Bitmap LCI_KB9000 {
             get {
-                object obj = ResourceManager.GetObject("Bematech_KB9000", resourceCulture);
+                object obj = ResourceManager.GetObject("LCI_KB9000", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

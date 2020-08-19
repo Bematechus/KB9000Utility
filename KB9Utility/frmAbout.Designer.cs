@@ -67,7 +67,7 @@ namespace KB9Utility
             // logoPictureBox
             // 
             this.logoPictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.logoPictureBox.Image = global::KB9Utility.Properties.Resources.Bematech_KB9000;
+            this.logoPictureBox.Image = global::KB9Utility.Properties.Resources.LCI_KB9000;
             this.logoPictureBox.Location = new System.Drawing.Point(3, 3);
             this.logoPictureBox.Name = "logoPictureBox";
             this.tableLayoutPanel.SetRowSpan(this.logoPictureBox, 6);

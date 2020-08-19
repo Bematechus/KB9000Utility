@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>KB9Utility</RootNamespace>
     <AssemblyName>KB9Utility</AssemblyName>
-    <ApplicationIcon>lci.ico</ApplicationIcon>
+    <ApplicationIcon>LCI_Icon.ico</ApplicationIcon>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
@@ -494,7 +494,7 @@
     <Content Include="lci.ico" />
     <None Include="Resources\redo.png" />
     <None Include="Resources\KB9000 small.png" />
-    <None Include="Resources\Bematech_KB9000.png" />
+    <None Include="Resources\LCI_KB9000.png" />
     <None Include="Resources\block.png" />
     <None Include="Resources\triangle.png" />
     <Content Include="_History.txt" />
@@ -543,7 +543,7 @@
     <None Include="Resources\repeat.png" />
     <None Include="Resources\updown.png" />
     <None Include="Resources\leftright.png" />
-    <None Include="Resources\bema.PNG" />
+    <None Include="Resources\lci_kb.PNG" />
     <None Include="app.config" />
     <None Include="Resources\del.png" />
     <None Include="Resources\button32.png" />
