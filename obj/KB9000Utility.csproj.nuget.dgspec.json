@@ -1,0 +1,58 @@
+{
+  "format": 1,
+  "restore": {
+    "/Volumes/inatek/projects/KB9000Utility/KB9000Utility.csproj": {}
+  },
+  "projects": {
+    "/Volumes/inatek/projects/KB9000Utility/KB9000Utility.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Volumes/inatek/projects/KB9000Utility/KB9000Utility.csproj",
+        "projectName": "KB9000Utility",
+        "projectPath": "/Volumes/inatek/projects/KB9000Utility/KB9000Utility.csproj",
+        "packagesPath": "/Users/carlosferreira/.nuget/packages/",
+        "outputPath": "/Volumes/inatek/projects/KB9000Utility/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/carlosferreira/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.401/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
