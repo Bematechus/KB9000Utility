@@ -15,10 +15,10 @@ namespace KB9Utility
 
         #endregion
 
-        #region ±äÁ¿ÉùÃ÷
+        #region ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
         private HookProc KeyboardHookProcedure;
-        private FileStream MyFs; // ÓÃÁ÷À´ÆÁ±Îctrl alt delete
+        private FileStream MyFs; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ctrl alt delete
 
         private const byte LLKHF_ALTDOWN = 0x20;
         private const byte VK_CAPITAL = 0x14;
@@ -52,22 +52,22 @@ namespace KB9Utility
 
         #endregion
 
-        #region º¯Êý×ª»»
+        #region ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½
 
         [DllImport("user32.dll", CharSet = CharSet.Auto, CallingConvention = CallingConvention.StdCall)]
         public static extern int SetWindowsHookEx(int idHook, HookProc lpfn, IntPtr hInstance, int threadId);
 
-        //   Ð¶ÔØ¹³×Ó  
+        //   Ð¶ï¿½Ø¹ï¿½ï¿½ï¿½  
 
         [DllImport("user32.dll", CharSet = CharSet.Auto, CallingConvention = CallingConvention.StdCall)]
         public static extern bool UnhookWindowsHookEx(int idHook);
 
-        //   ¼ÌÐøÏÂÒ»¸ö¹³×Ó  
+        //   ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  
 
         [DllImport("user32.dll", CharSet = CharSet.Auto, CallingConvention = CallingConvention.StdCall)]
         public static extern int CallNextHookEx(int idHook, int nCode, Int32 wParam, IntPtr lParam);
 
-        //   È¡µÃµ±Ç°Ïß³Ì±àºÅ  
+        //   È¡ï¿½Ãµï¿½Ç°ï¿½ß³Ì±ï¿½ï¿½  
 
         [DllImport("kernel32.dll")]
         private static extern int GetCurrentThreadId();
@@ -77,10 +77,10 @@ namespace KB9Utility
 
         #endregion
 
-        #region ·½·¨
+        #region ï¿½ï¿½ï¿½ï¿½
 
         /// <summary>
-        /// ¹³×Ó»Øµ÷º¯Êý£¬ÔÚÕâÀïÆÁ±ÎÈÈ¼ü¡£
+        /// ï¿½ï¿½ï¿½Ó»Øµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¼ï¿½ï¿½ï¿½
         /// <remark> 
         /// Author:ZhangRongHua 
         /// Create DateTime: 2009-6-19 20:19
@@ -111,7 +111,7 @@ namespace KB9Utility
 
          
         /// <summary>
-        /// Æô¶¯Hook£¬²¢ÓÃÁ÷ÆÁ±ÎÈÎÎñ¹ÜÀíÆ÷
+        /// ï¿½ï¿½ï¿½ï¿½Hookï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         /// <remark> 
         /// Author:ZhangRongHua 
         /// Create DateTime: 2009-6-19 20:20
@@ -122,7 +122,7 @@ namespace KB9Utility
         {
             if (hKeyboardHook == 0)
             {
-                //   ´´½¨HookProcÊµÀý  
+                //   ï¿½ï¿½ï¿½ï¿½HookProcÊµï¿½ï¿½  
 
                 KeyboardHookProcedure = new HookProc(KeyboardHookProc);
 
@@ -131,7 +131,7 @@ namespace KB9Utility
                                                  Marshal.GetHINSTANCE(Assembly.GetExecutingAssembly().GetModules()[0]),
                                                  0);
 
-                //   Èç¹ûÉèÖÃ¹³×ÓÊ§°Ü  
+                //   ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¹ï¿½ï¿½ï¿½Ê§ï¿½ï¿½  
 
                 if (hKeyboardHook == 0)
                 {
@@ -140,7 +140,7 @@ namespace KB9Utility
                     //throw new Exception("SetWindowsHookEx   failedeeeeeeee.");
                 }
 
-                //ÓÃ¶þ½øÖÆÁ÷µÄ·½·¨´ò¿ªÈÎÎñ¹ÜÀíÆ÷¡£¶øÇÒ²»¹Ø±ÕÁ÷.ÕâÑùÈÎÎñ¹ÜÀíÆ÷¾Í´ò¿ª²»ÁË
+                //ï¿½Ã¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò²ï¿½ï¿½Ø±ï¿½ï¿½ï¿½.ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í´ò¿ª²ï¿½ï¿½ï¿½
                 MyFs = new FileStream(Environment.ExpandEnvironmentVariables("%windir%\\system32\\taskmgr.exe"),
                                       FileMode.Open);
                 byte[] MyByte = new byte[(int) MyFs.Length];
@@ -151,7 +151,7 @@ namespace KB9Utility
 
 
         /// <summary>
-        /// Ð¶ÔØhook,²¢¹Ø±ÕÁ÷£¬È¡ÏûÆÁ±ÎÈÎÎñ¹ÜÀíÆ÷¡£
+        /// Ð¶ï¿½ï¿½hook,ï¿½ï¿½ï¿½Ø±ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         /// <remark> 
         /// Author:ZhangRongHua 
         /// Create DateTime: 2009-6-19 20:21

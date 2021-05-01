@@ -8,9 +8,11 @@ Global
 		Debug|Any CPU = Debug|Any CPU
 		Debug|Mixed Platforms = Debug|Mixed Platforms
 		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
 		Release|Any CPU = Release|Any CPU
 		Release|Mixed Platforms = Release|Mixed Platforms
 		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{4802A6C8-DC3C-48CD-A4DC-F157F62811CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -18,11 +20,15 @@ Global
 		{4802A6C8-DC3C-48CD-A4DC-F157F62811CC}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
 		{4802A6C8-DC3C-48CD-A4DC-F157F62811CC}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
 		{4802A6C8-DC3C-48CD-A4DC-F157F62811CC}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{4802A6C8-DC3C-48CD-A4DC-F157F62811CC}.Debug|x64.ActiveCfg = Debug|x64
+		{4802A6C8-DC3C-48CD-A4DC-F157F62811CC}.Debug|x64.Build.0 = Debug|x64
 		{4802A6C8-DC3C-48CD-A4DC-F157F62811CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4802A6C8-DC3C-48CD-A4DC-F157F62811CC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4802A6C8-DC3C-48CD-A4DC-F157F62811CC}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{4802A6C8-DC3C-48CD-A4DC-F157F62811CC}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{4802A6C8-DC3C-48CD-A4DC-F157F62811CC}.Release|Win32.ActiveCfg = Release|Any CPU
+		{4802A6C8-DC3C-48CD-A4DC-F157F62811CC}.Release|x64.ActiveCfg = Release|x64
+		{4802A6C8-DC3C-48CD-A4DC-F157F62811CC}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
